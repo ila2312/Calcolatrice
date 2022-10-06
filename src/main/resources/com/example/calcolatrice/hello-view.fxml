@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="541.0" prefWidth="367.0" style="-fx-background-color: #e4a7fa;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="541.0" prefWidth="367.0" style="-fx-background-color: #e4a7fa;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calcolatrice.HelloController">
    <children>
-      <Button fx:id="_b1" layoutX="40.0" layoutY="145.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="1" textFill="WHITE" AnchorPane.bottomAnchor="328.0" AnchorPane.topAnchor="145.0">
+      <Button fx:id="_b1" layoutX="40.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="1" textFill="WHITE" AnchorPane.bottomAnchor="328.0" AnchorPane.topAnchor="145.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -20,17 +20,17 @@
             <Font name="Consolas Bold Italic" size="29.0" />
          </font>
       </Label>
-      <Button fx:id="_b3" layoutX="264.0" layoutY="145.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="3" textFill="WHITE" AnchorPane.bottomAnchor="328.0" AnchorPane.topAnchor="145.0">
+      <Button fx:id="_b3" layoutX="264.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="3" textFill="WHITE" AnchorPane.bottomAnchor="328.0" AnchorPane.topAnchor="145.0">
          <font>
             <Font name="Impact" size="28.0" />
          </font>
       </Button>
-      <Button fx:id="_b2" layoutX="152.0" layoutY="145.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="2" textFill="WHITE" AnchorPane.bottomAnchor="328.0" AnchorPane.topAnchor="145.0">
+      <Button fx:id="_b2" layoutX="152.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="2" textFill="WHITE" AnchorPane.bottomAnchor="328.0" AnchorPane.topAnchor="145.0">
          <font>
             <Font name="Impact" size="28.0" />
          </font>
       </Button>
-      <Button fx:id="_b4" layoutX="40.0" layoutY="243.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="4" textFill="WHITE">
+      <Button fx:id="_b4" layoutX="40.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="4" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -38,7 +38,7 @@
             <Font name="Impact" size="28.0" />
          </font>
       </Button>
-      <Button fx:id="_b5" layoutX="152.0" layoutY="243.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="5" textFill="WHITE">
+      <Button fx:id="_b5" layoutX="152.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="5" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -46,7 +46,7 @@
             <Font name="Impact" size="28.0" />
          </font>
       </Button>
-      <Button fx:id="_b6" layoutX="264.0" layoutY="243.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="6" textFill="WHITE">
+      <Button fx:id="_b6" layoutX="264.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="6" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -54,7 +54,7 @@
             <Font name="Impact" size="28.0" />
          </font>
       </Button>
-      <Button fx:id="_b7" layoutX="40.0" layoutY="341.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="7" textFill="WHITE">
+      <Button fx:id="_b7" layoutX="40.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="7" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -62,7 +62,7 @@
             <Font name="Impact" size="28.0" />
          </font>
       </Button>
-      <Button fx:id="_b8" layoutX="152.0" layoutY="341.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="8" textFill="WHITE">
+      <Button fx:id="_b8" layoutX="152.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="8" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -70,7 +70,7 @@
             <Font name="Impact" size="28.0" />
          </font>
       </Button>
-      <Button fx:id="_b9" layoutX="264.0" layoutY="341.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="9" textFill="WHITE">
+      <Button fx:id="_b9" layoutX="264.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="9" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -78,7 +78,7 @@
             <Font name="Impact" size="28.0" />
          </font>
       </Button>
-      <Button fx:id="_b0" layoutX="152.0" layoutY="439.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="0" textFill="WHITE">
+      <Button fx:id="_b0" layoutX="152.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="68.0" prefWidth="62.0" style="-fx-background-color: #fc748f; -fx-background-radius: 20px;" text="0" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -86,17 +86,22 @@
             <Font name="Impact" size="28.0" />
          </font>
       </Button>
-      <Button fx:id="_plus" layoutX="54.0" layoutY="81.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="34.0" style="-fx-background-color: #fc748f;" text="+">
+      <Button fx:id="_plus" disable="true" layoutX="54.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleButtonPlus" prefHeight="35.0" prefWidth="34.0" style="-fx-background-color: #fc748f;" text="+" textFill="WHITE">
          <font>
             <Font name="Impact" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="_min" layoutX="166.0" layoutY="81.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="34.0" style="-fx-background-color: #fc748f;" text="-">
+      <Button fx:id="_min" disable="true" layoutX="166.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleButtonMin" prefHeight="35.0" prefWidth="34.0" style="-fx-background-color: #fc748f;" text="-" textFill="WHITE">
          <font>
             <Font name="Impact" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="_equal" layoutX="278.0" layoutY="81.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="34.0" style="-fx-background-color: #fc748f;" text="=">
+      <Button fx:id="_equal" disable="true" layoutX="278.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleButtonEqual" prefHeight="35.0" prefWidth="34.0" style="-fx-background-color: #fc748f;" text="=" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="_canc" layoutX="40.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleButtonCanc" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #fc748f;" text="Canc" textFill="WHITE">
          <font>
             <Font name="Impact" size="18.0" />
          </font>
